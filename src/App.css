@@ -1,0 +1,133 @@
+/* Основные стили */
+.app {
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Герой-блок */
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url('https://images.unsplash.com/photo-1606787366850-de6330128bfc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  color: white;
+  text-align: right;
+  padding-right: 10%;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Секция "О нас" */
+.about-section {
+  background-color: #fff9f2;
+}
+
+/* Стили для секции "О нас" */
+.about-section {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Стили для секции "Преимущества" */
+.benefits-section {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefits-content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+  flex-direction: row-reverse; /* Меняем порядок расположения */
+}
+
+.benefits-text {
+  flex: 1;
+  padding-left: 40px; /* Отступ слева для текста */
+}
+
+.benefits-image {
+  flex: 1;
+}
+
+.benefits-image img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Общие стили для списка преимуществ */
+.benefits-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.benefits-section li {
+  margin: 15px 0;
+  position: relative;
+  padding-left: 30px;
+}
+
+.benefits-section li:before {
+  content: "✓";
+  color: #ff6b6b;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
