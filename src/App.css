@@ -90,6 +90,13 @@ section.active {
 
 .section-text {
   flex: 1;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 18;
+  text-align: left;
+  line-height: 1.6;
+  margin: 0 auto;
+
+
 }
 
 .section-image {
