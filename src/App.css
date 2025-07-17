@@ -17,6 +17,13 @@ body {
 .app {
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Растягивает основной контент */
 }
 
 /* Стили для всех секций */

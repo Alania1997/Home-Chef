@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './App.css';
 import aboutImage from './about.jpg'; // Убедитесь, что файл существует
 import benefitsImage from './benefits.jpg'; // Убедитесь, что файл существует
+import Footer from './footer';
+
 
 function App() {
   useEffect(() => {
@@ -79,6 +81,7 @@ Home Chef — это не просто сервис доставки еды. Э�
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 }
